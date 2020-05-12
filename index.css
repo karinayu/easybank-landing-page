@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body header .request a, body main .intro .intro-banner a, body footer .request .request-link {
+  padding: 12px 30px;
+  background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  border-radius: 30px;
+  color: #fff;
+  font-weight: bold;
+}
+
+body header .request a:hover, body main .intro .intro-banner a:hover, body footer .request .request-link:hover {
+  opacity: 0.7;
+}
+
+body main .why-choose .wrapper .h3, body main .articles .latest-articles .h3 {
+  font-size: 34px;
+  color: #2d314d;
+  padding-bottom: 2rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html li {
+  list-style: none;
+}
+
+html a {
+  text-decoration: none;
+}
+
+html p {
+  line-height: 1.5;
+}
+
+body {
+  font-family: 'Public Sans', sans-serif;
+}
+
+body header {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #fff;
+}
+
+body header .logo {
+  padding-top: 20px;
+  padding-left: 10rem;
+  width: 40%;
+}
+
+body header .nav {
+  padding-top: 20px;
+  width: 30%;
+  padding-right: 5rem;
+}
+
+body header .nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body header .nav .nav-links li a {
+  color: #85858B;
+  padding: 0 0 25px 0;
+  font-size: 14px;
+}
+
+body header .nav .nav-links li a:hover {
+  color: #000;
+  border: 5px solid transparent;
+  -o-border-image: linear-gradient(to right, #31d35c, #2bb7da) 0 0 100% 0;
+     border-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da)) 0 0 100% 0;
+     border-image: linear-gradient(to right, #31d35c, #2bb7da) 0 0 100% 0;
+}
+
+body header .request {
+  width: 30%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main {
+  overflow: hidden;
+}
+
+body main .intro {
+  background: url(./images/bg-intro-desktop.svg) no-repeat;
+  background-size: 90%;
+  background-position: 550px -150px;
+  width: 100%;
+  height: 100vh;
+  background-color: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main .intro .intro-banner {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: left;
+  padding: 10rem 5rem 3rem 10rem;
+}
+
+body main .intro .intro-banner h1 {
+  font-size: 48px;
+  font-weight: 400;
+  color: #2d314d;
+}
+
+body main .intro .intro-banner p {
+  color: #9698a6;
+  font-size: 18px;
+}
+
+body main .intro .intro-image {
+  width: 50%;
+  position: relative;
+}
+
+body main .intro .intro-image img {
+  position: absolute;
+  top: -50px;
+  left: 100px;
+  width: 650px;
+  height: auto;
+}
+
+body main .why-choose {
+  width: 100%;
+  height: 100vh;
+  background-color: #f3f4f6;
+}
+
+body main .why-choose .wrapper {
+  margin-left: 10%;
+  padding-top: 3rem;
+  width: 50%;
+  padding-bottom: 5%;
+}
+
+body main .why-choose .wrapper p {
+  font-size: 18px;
+  color: #9698a6;
+}
+
+body main .why-choose .reasons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin-left: 10%;
+}
+
+body main .why-choose .reasons .reason img {
+  padding-bottom: 30px;
+}
+
+body main .why-choose .reasons .reason .h4 {
+  font-size: 20px;
+  color: #2d314d;
+  padding-bottom: 30px;
+}
+
+body main .why-choose .reasons .reason p {
+  color: #9698a6;
+  font-size: 16px;
+}
+
+body main .articles {
+  width: 100%;
+  height: 100vh;
+  background-color: #fafafa;
+}
+
+body main .articles .latest-articles {
+  padding-top: 3rem;
+  width: 50%;
+  padding-bottom: 0.5rem;
+  margin-left: 10%;
+}
+
+body main .articles .list-articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin-left: 10%;
+}
+
+body main .articles .list-articles .article {
+  width: 230px;
+  height: 380px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+body main .articles .list-articles .article img {
+  width: 230px;
+  height: 170px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+body main .articles .list-articles .article .wrapper {
+  padding: 20px 20px;
+}
+
+body main .articles .list-articles .article .wrapper .by-name {
+  font-size: 11px;
+}
+
+body main .articles .list-articles .article .wrapper .h5 {
+  font-size: 16px;
+  color: #2d314d;
+  padding: 10px 0 10px 0;
+}
+
+body main .articles .list-articles .article .wrapper .h5:hover {
+  color: #31d35c;
+  cursor: pointer;
+}
+
+body main .articles .list-articles .article .wrapper p {
+  color: #9698a6;
+  font-size: 12px;
+}
+
+body footer {
+  width: 100%;
+  padding: 7vh 10%;
+  height: 30vh;
+  background-color: #2d314d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body footer .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body footer .social-media .logo {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body footer .social-media .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body footer .social-media .social-links a svg path {
+  fill: #fff;
+}
+
+body footer .social-media .social-links a svg path:hover {
+  fill: #31d35c;
+}
+
+body footer .footer-nav {
+  width: 30%;
+}
+
+body footer .footer-nav nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 15vh;
+}
+
+body footer .footer-nav nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body footer .footer-nav nav .nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+body footer .footer-nav nav .nav-links li a:hover {
+  color: #31d35c;
+}
+
+body footer .request {
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+body footer .request .request-link {
+  width: 170px;
+}
+
+body footer .request p {
+  color: #fff;
+}
+
+body footer .request .attribution {
+  font-size: 11px;
+  color: #fff;
+}
+
+body footer .request .attribution a {
+  color: #31d35c;
+}
+/*# sourceMappingURL=index.css.map */
